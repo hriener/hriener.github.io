@@ -31,9 +31,9 @@
           </div>
 
           <ul class="nav nav-pills">
-            <li role="presentation" class="active"><a>News</a></li>
+            <li role="presentation"><a href="index.html">News</a></li>
             <li role="presentation"><a href="publications.html">Publications</a></li>
-            <li role="presentation"><a href="software.html">Software</a></li>
+            <li role="presentation" class="active"><a>Software</a></li>
             <li role="presentation"><a href="activities.html">Activities</a></li>
           </ul>
 
@@ -50,34 +50,53 @@
 
           <div class='row'>
             <div class='col-md-8'>
-              <p style='text-align: justify'>
-                Heinz Riener works as a researcher at the <a target="_blank" href="http://lsi.epfl.ch/">Integrated Systems Laboratory</a> at <b>EPFL, Lausanne, Switzerland</b> in the group of Giovanni De Micheli.  He holds a Ph.D. degree (Dr.-Ing.) in Computer Science from University of Bremen, Germany.<br />
-                <ul>
-                <li>From 2015 to 2017 he worked at the <b>German Aerospace Center (DLR), Bremen, Germany</b>, in the group of Avionics Systems.</li>
-                <li>From 2011 to 2015 he worked at the <b>University of Bremen, Germany,</b> in the group of Reliable Embedded Systems.</li>
-                </ul>
-                His research interests are formal methods for computer-aided design and verification of hardware and software systems.
-              </p>
-
-              <div class='tab-pane active' id='news'>
-                <h3>News</h3>
+              <div class='tab-pane active' id='software'>
+                <h3>Software</h3><a name="software"></a>
                 <ul class='list-group'>
                   <li class='list-group-item'>
-                    The paper <b>Generating Safety Guidance for Medical Injection with Three-Compartment Pharmacokinetics</b>
-                    has been accepted by the ISVLSI 2018 conference.
+                    <img src="https://cdn.rawgit.com/hriener/behemoth/master/behemoth.svg" width="40" height="40" align="left" style="margin-right: 12pt" />
+                    <span class="label label-primary">NEW</span>
+                    2018, <b>behemoth</b> is a C++ library for syntax-guided enumeration and synthesis.
+                    (<a target="_blank" href="https://github.com/hriener/behemoth">GitHub</a>)
                   </li>
                   <li class='list-group-item'>
-                    The papers
-                    <ul>
-                      <li><b>Coverage-Guided CTL Property Enumeration for Understanding Models of Reactive Systems</b></li>
-                      <li><b>The EPFL logic synthesis libraries</b></li>
-                    </ul>
-                    have been accepted by IWLS 2018.
+                    <span class="label label-primary">NEW</span>
+                    2018, <b>aig</b> is a C++ header-only library for the representation of <i>And-Inverter Graphs</i> (AIG).
+                    (<a target="_blank" href="https://github.com/hriener/aig">GitHub</a>)
                   </li>
                   <li class='list-group-item'>
-                    The paper <b>Mining Latency Guarantees for RTL Designs</b> has been accepted by the ISMVL 2018 conference.
+                    <img src="https://cdn.rawgit.com/hriener/lorina/master/lorina.svg" width="40" height="40" align="left" style="margin-right: 12pt" />
+                    <span class="label label-primary">NEW</span>
+                    2018, <b>lorina</b> is a C++ header-only parsing library for various simple file formats (AIG, BENCH, BLIF, PLA) commonly used in logic synthesis and formal verification
+                    (<a target="_blank" href="https://github.com/hriener/lorina">GitHub</a>,
+                     <a target="_blank" href="https://github.com/hriener/lorina/releases">Version 0.1 (Apr 27, 2018)</a>,
+                     <a target="_blank" href="http://lorina.readthedocs.io/en/latest/?badge=latest">Documentation</a>)
+                  </li>
+                  <li class='list-group-item'>
+                    <span class="label label-primary">NEW</span>
+                    2018, <b>easy</b> is a toolkit for finding <i>Exclusive-or Sum Of Products</i> (ESOP).
+                    (<a target="_blank" href="https://github.com/hriener/easy">GitHub</a>, 
+                     <a target="_blank" href="http://easy.readthedocs.io/en/latest/?badge=latest">Documentation</a>)
+                  </li>
+                  <li class='list-group-item'>
+                    2017, <b>ParSyn-CEGIS</b> is a flexible software framework for parameter synthesis and repair of cyber-physical systems.
+                    (<a target="_blank" href="https://github.com/hriener/parsyn-cegis">GitHub</a>)
+                  </li>
+                  <li class='list-group-item'>
+                    2016, <b>metaSMT</b> is an easy to use <i>Embedded Domain Specific Language</i> (EDSL) for C++ that integrates various decision procedures directly via one common API.
+                    (<a target="_blank" href="https://github.com/agra-uni-bremen/metaSMT">GitHub</a>)
+                  </li>
+                  <li class='list-group-item'>
+                    2015, <b>metaSMT-toolbox-smt2eval</b> is a metaSMT toolbox project that allows reading and evaluating SMT-LIB2 instances utilizing a variety of different solving engines and techniques.  Applications include portfolio solving of an SMT-LIB2 instance or cross-checking results of multiple solving engines.
+                    (<a target="_blank" href="https://github.com/hriener/metaSMT-toolbox-smt2eval">GitHub</a>)
                   </li>
                 </ul>
+              </div>
+
+              <div>              
+                <h3>Latest Commits</h3>
+                <ul class='list-group' id='commits'></ul>
+                <br />
               </div>
             </div>
 
@@ -112,13 +131,15 @@
               <br />
               <i class="fa fa-linkedin" aria-hidden="true"></i>
               <a target="_blank" href="https://www.linkedin.com/in/heinz-riener-262a1a155/">LinkedIn</a>
-
               <br /><br />
-              <img align='left' id='epfl-logo' src='images/epfl.svg' width='175px' />
+              <img align='left' id='epfl-logo' src='images/epfl.svg' width='175px'>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <script src='js/jquery.min.js'></script>
+    <script src='js/jquery.timeago.js'></script>
+    <script src='js/github.js'></script>
   </body>
 </html>
