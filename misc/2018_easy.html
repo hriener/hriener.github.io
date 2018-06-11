@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta content='IE=edge' http-equiv='X-UA-Compatible'>
+    <meta content='width=device-width, initial-scale=1' name='viewport'>
+    <title>Exact Synthesis of ESOP Forms</title>
+    <link href='../css/bootstrap.min.css' rel='stylesheet'>
+    <link href='../css/custom.css' rel='stylesheet'>
+    <script src='https://use.fontawesome.com/02858a71b6.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/highcharts.js"></script>
+    <script src="js/exporting.js"></script>
+    <script src="js/export-data.js"></script>
+  </head>
+  <body>
+    <div class='container' id='main-container'>
+      <div class='row' id='main-row'>
+        <div class='col-md-3' id='left-column' align='center'>
+          <!-- img id='nav-picture' src='../images/easy.png' -->
+        </div>
+        <div class='col-md-9'>
+          <div class='starter-template'>
+            <h1>Exact Synthesis of ESOP Forms</h1>
+            <p class='lead'>Benchmark Suite</p>
+          </div>
+
+          <br />
+
+          <div class=''>
+            <h2>Completely-specified Boolean functions</h2>
+
+            <table width="100%" border="1">
+              <tr>
+                <th width="60%">Name</th>
+                <th width="20%">Number</th>
+                <th width="20%">Download</th>
+              </tr>
+              <tr>
+                <td>NPN4 equivalence class</td>
+                <td>222</td>
+                <td><a target="_blank" href="esop_benchmarks/npn4.txt">npn4.txt</a></td>
+              </tr>
+              <tr>
+                <td>8-LUT Mappping</td>
+                <td>4001</td>
+                <td><a target="_blank" href="esop_benchmarks/lut8.txt">lut8.txt</a></td>
+              </tr>
+            </table>
+              
+            <h2>Incompletely-specified Boolean functions</h2>
+
+            <table width="100%" border="1">
+              <tr>
+                <th width="60%">Name</th>
+                <th width="20%">Number</th>
+                <th width="20%">Download</th>
+              </tr>
+              <tr>
+                <td>Random functions with 5 Boolean variables</td>
+                <td>100</td>
+                <td><a target="_blank" href="esop_benchmarks/random5.txt">random5.txt</a></td>
+              </tr>
+              <tr>
+                <td>Random functions with 6 Boolean variables</td>
+                <td>100</td>
+                <td><a target="_blank" href="esop_benchmarks/random6.txt">random6.txt</a></td>
+              </tr>
+              <tr>
+                <td>Random functions with 7 Boolean variables</td>
+                <td>100</td>
+                <td><a target="_blank" href="esop_benchmarks/random7.txt">random7.txt</a></td>
+              </tr>
+              <tr>
+                <td>Random functions with 8 Boolean variables</td>
+                <td>100</td>
+                <td><a target="_blank" href="esop_benchmarks/random8.txt">random8.txt</a></td>
+              </tr>
+            </table>
+
+            <h2>Synthesis results</h2>
+
+            <div id="npn4"      style="min-width: 200px; height: 400px; margin: 0 auto"></div>
+            <div id="lut8_size" style="min-width: 200px; height: 400px; margin: 0 auto"></div>
+            <div id="random5"   style="min-width: 200px; height: 400px; margin: 0 auto"></div>
+            <div id="random6"   style="min-width: 200px; height: 400px; margin: 0 auto"></div>
+            <div id="random7"   style="min-width: 200px; height: 400px; margin: 0 auto"></div>
+            <div id="random8"   style="min-width: 200px; height: 400px; margin: 0 auto"></div>
+
+            <script src="js/npn4.js"></script>
+            <script src="js/lut8_size.js"></script>
+            <script src="js/random5.js"></script>
+            <script src="js/random6.js"></script>
+            <script src="js/random7.js"></script>
+            <script src="js/random8.js"></script>
+            
+            <!--
+            <h2>References</h2>
+
+            <div class='tab-pane active' id='news'>
+              <ul class='list-group'>
+                <li class='list-group-item'>
+                  Heinz Riener, R&uuml;diger Ehlers, Bruno Schmitt, Giovanni De Micheli,
+                  <b>Exact Synthesis of ESOP forms</b>, 2018.
+                  (<a target="_blank" href="">arXiv</a>)
+                </li>
+              </ul>
+            </div>            
+            -->            
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
